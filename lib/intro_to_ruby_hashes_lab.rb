@@ -7,9 +7,11 @@ def read_from_hash(hash, key)
 end
 
 def update_counting_hash(hash, key)
- if hash[:key] +=1 
+updated_hash = hash ={:key => 5}
+
+ if updated_hash[:key] +=1 
  else
-   hash[:key] = 1
+   updated_hash[:key] = 1
  end
   # given a hash an a key as parameters, return an updated hash
   # if the provided key is not present in the hash, add it and assign it to the value of 1
